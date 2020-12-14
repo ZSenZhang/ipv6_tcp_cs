@@ -35,8 +35,8 @@ int main(int argc,char *argv[])
             printf("the client %s is connected...\n", s);
             free(s);
         }
+        close(new_socket);
     }
-    close(new_socket);
     return close(create_socket);
 }
 
